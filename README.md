@@ -53,17 +53,28 @@ The goal is to classify natural scene images into six categories: **buildings, f
 ## How to Run
 
 ### 1. Install dependencies
-```bash
+
+```
 pip install -r requirements.txt
-2. Train the model
+
+```
+
+### 2. Train the model
+
+```
 python -m src.training.train
-3. Evaluate the model
+```
+### 3. Evaluate the model
+
+```
 python -m src.evaluation.evaluate
+```
 Confusion matrix will be saved as confusion_matrix.png in the project root
 
 Classification metrics printed in terminal
 
-Repository Structure
+### Repository Structure
+```
 image-classification-intel/
 ├── README.md
 ├── requirements.txt
@@ -84,18 +95,15 @@ image-classification-intel/
 │   └── evaluate.sh
 └── checkpoints/
     └── best_model.keras
-Environment
-Python 3.10 (managed via pyenv recommended)
+```
+### Environment
+- Python 3.10 (managed via pyenv recommended)
+- TensorFlow 2.x
+- Tested on Windows / Linux
 
-TensorFlow 2.x
-
-Tested on Windows / Linux
-
-Results
-Validation accuracy typically above 90% after 10 epochs
-
-Confusion matrix demonstrates strong class separation
-
-Modular, reproducible pipeline for further experimentation
+### Results
+- Validation accuracy typically above 90% after 10 epochs
+- Confusion matrix demonstrates strong class separation
+- Modular, reproducible pipeline for further experimentation
 
 
