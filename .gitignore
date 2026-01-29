@@ -1,0 +1,6 @@
+
+.gitignore
+init_project.py
+__pycache__/
+venv/
+initialize Git & push to GitHub.ipynb
